@@ -1,0 +1,109 @@
+<!-- *📝 Ejercicio 3: Añadir validaciones HTML5 a un formulario de contacto.
+
+El cliente notó que algunos usuarios escriben mensajes sin completar su correo o con valores no válidos. Te pide implementar validaciones directamente en el formulario para mejorar la calidad de la información que recibe. -->
+
+<!--* 🎯 Objetivo:
+- Aplicar atributos de validación en campos de formulario usando solo HTML5.
+- Usar expresiones regulares básicas con el atributo pattern.
+- Mejorar la experiencia de usuario con mensajes de validación. -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova - Innovación Tecnológica</title>
+  </head>
+
+  <body>
+    <!-- Encabezado principal -->
+    <header>
+      <h1>TechNova</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+
+    <main>
+      <section>
+        <h2>Nuestros servicios</h2>
+
+        <ul>
+          <li>Desarrollo Web</li>
+          <li>Consultoría Tecnológica</li>
+          <li>Automatización de procesos</li>
+        </ul>
+      </section>
+
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+
+        <form action="#" method="POST" novalidate>
+          <div>
+            <label for="nombre">Nombre completo (solo letras):</label><br />
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre completo"
+              required
+              pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,50}$"
+              title="Ingresa solo letras y al menos 3 caracteres."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="email">Correo electrónico válido:</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="tunombre@ejemplo.com"
+              required
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="telefono">Teléfono (10 dígitos):</label><br />
+            <input
+              type="tel"
+              name="telefono"
+              id="telefono"
+              placeholder="5551234567"
+              required
+              pattern="^\d{10}$"
+              title="Ingresa exactamente 10 dígitos numéricos."
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="mensaje">Mensaje (mínimo 10 caracteres):</label><br />
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje..."
+              required
+              minlength="10"
+              maxlength="500"
+            ></textarea>
+          </div>
+          <br />
+
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

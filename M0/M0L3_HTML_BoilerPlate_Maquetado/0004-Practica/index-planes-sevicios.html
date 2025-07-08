@@ -1,0 +1,95 @@
+<!--*📝 Ejercicio 4: Crear una sección de precios con lista y tabla de comparación
+
+El cliente quiere que agregues a la landing page de TechNova una sección de “Planes y precios” que muestre una lista de características de los servicios, e incluya una tabla comparativa de precios para tres planes distintos: Básico, Pro y Premium. -->
+
+<!--*🎯 Objetivo:
+-Practicar listas ordenadas y desordenadas.
+-Crear tablas con encabezados y filas de datos.
+-Integrar imágenes para representar visualmente cada plan.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova - Innovación Tecnológica</title>
+  </head>
+
+  <body>
+    <!-- Encabezado principal -->
+    <header>
+      <h1>TechNova</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <section id="planes-precios">
+        <h2>Planes y precios</h2>
+
+        <h3>Características principales:</h3>
+        <ul>
+          <li>Soporte 24/7</li>
+          <li>Actualizacones mensuales</li>
+          <li>Personalización avanzadas</li>
+        </ul>
+
+        <h3>Pasos para contratar:</h3>
+        <ol>
+          <li>Selecciona tu plan.</li>
+          <li>Completa el formulario de registro.</li>
+          <li>Recibe confirmación por correo.</li>
+        </ol>
+
+        <h3>Comparación de planes:</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Precio</th>
+              <th>Incluye</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Básico</td>
+              <td>$30/mes</td>
+              <td>Hosting + Dominio gratis</td>
+            </tr>
+
+            <tr>
+              <td>Premium</td>
+              <td>$60/mes</td>
+              <td>Todo lo anterior + soporte prioritario</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Imágenes de los planes:</h3>
+        <figure>
+          <img src="https://via.placeholder.com/150" alt="Plan Básico" />
+          <figcaption>Plan Básico</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://via.placeholder.com/150" alt="Plan Pro" />
+          <figcaption>Plan Pro</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://via.placeholder.com/150" alt="Plan Premium" />
+          <figcaption>Plan Premium</figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>

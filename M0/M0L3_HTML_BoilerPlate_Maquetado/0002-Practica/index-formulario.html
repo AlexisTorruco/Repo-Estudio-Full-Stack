@@ -1,0 +1,94 @@
+<!--* 📝 Ejercicio 2: Crear un formulario de contacto funcional en HTML
+ 
+ Requerimiento simulado:
+
+El cliente quiere que agregues un formulario de contacto al final de la landing page de “TechNova”. El formulario debe permitir a los usuarios enviar su nombre, correo electrónico y mensaje. Debe tener etiquetas claras, campos obligatorios y un botón de envío.-->
+
+<!--* 🎯 Objetivo:
+Practicar formularios en HTML: etiquetas <form>, <label>, <input>, <textarea>, <button>.
+
+Usar atributos importantes como required, type, placeholder, name.  -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova - Innovación Tecnológica</title>
+  </head>
+  <body>
+    <!-- Encabezado principal -->
+    <header>
+      <h1>TechNova</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+
+    <main>
+      <section>
+        <h2>Nuestros servicios</h2>
+        <ul>
+          <li>Desarrollo Web</li>
+          <li>Consultoría Tecnológica</li>
+          <li>Automatización de procesos</li>
+        </ul>
+      </section>
+
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST">
+          <div>
+            <label for="nombre">Nombre:</label><br />
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Tu nombre completo"
+              required
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="email">Correo electrónico:</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="tunombre@ejemplo.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="mensaje">Mensaje:</label><br />
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje..."
+              required
+            ></textarea>
+          </div>
+          <br />
+
+          <button type="submit">Enviar Mensajes</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy;2025 TechNova. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.seccion-destacada p {
+  color: #4b0082; /* Púrpura oscuro para párrafos dentro de la sección destacada */
+  font-style: italic; /* Texto en cursiva */
+}
+
+.seccion-destacada p a {
+  color: #008080; /* Verde azulado para los enlaces dentro de los párrafos */
+  text-decoration: none; /*quita subrayado*/
+}
+
+.seccion-destacada p a:hover {
+  color: #ff4500; /* Naranja intenso al pasar el mouse */
+  text-decoration: underline; /* Subrayado en hover */
+}

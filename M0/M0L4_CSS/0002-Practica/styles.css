@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  text-align: left;
+}
+
+#titulo-principal {
+  color: #2e8b57;
+  text-align: center;
+}
+
+.mensaje-especial {
+  background-color: #ffffcc;
+  padding: 1em;
+  border-left: 5px solid #f39c12;
+  font-weight: bold;
+}
