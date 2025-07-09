@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+a {
+  border: 2px solid black;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* 1. Inline */
+.boton-inline {
+  display: inline;
+  background-color: #f39c12;
+}
+
+/* 2. Block */
+.boton-block {
+  display: block;
+  background-color: #e74c3c;
+}
+
+/* 3. Inline-Block */
+.boton-inline-block {
+  display: inline-block;
+  background-color: #2ecc71;
+}

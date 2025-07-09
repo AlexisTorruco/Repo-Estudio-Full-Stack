@@ -1,0 +1,57 @@
+/* Estilos base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Contenedor Flex */
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /*Permite que bajen si no caben en pantalla*/
+}
+
+/* Tarjetas Individuales */
+.tarjeta {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarjeta h2 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.tarjeta button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tarjeta button:hover {
+  background-color: #2980b9;
+}
